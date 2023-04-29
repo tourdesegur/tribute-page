@@ -136,15 +136,4 @@ body {
   margin: 0 auto;
   }
 
-  @media screen and (max-width: 600px) {
-    #subtitle {
-      font-size: 18px;
-    }
-    h1 {
-        font-size:72px;
-    }
-
-    footer {
-        font-size:8px;
-    }
-  }
+ 
