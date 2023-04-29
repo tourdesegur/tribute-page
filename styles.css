@@ -5,23 +5,34 @@
     padding:0;
     box-sizing:border-box;
     font-family: 'Montserrat', sans-serif;
+    color: #001021;
   }
 
 body {
     background-color: #f5f2ec;
   }
 
- h1, h3, #subtitle {
+ h1, h3, #subtitle, #subtitle-timeline {
     font-family: 'Amatic SC', cursive;
  } 
 
  h1 {
     font-size: 64px;
     font-weight: 400;
+    letter-spacing: 0.05em;
  }
 
- #subtitle {
+ #subtitle, #tribute-info ul li h3 {
     font-size: 24px;
+    letter-spacing: 0.05em;
+ }
+
+ #subtitle-timeline {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+
  }
  .header, #img-div, .footer {
     text-align: center;
@@ -35,16 +46,69 @@ body {
 
  #tribute-info {
     background-color: #ABC4B9;
-    width: 60%;
+    width: 80%;
     margin:40px auto 0 auto;
-    padding: 40px;
+    padding: 40px 60px;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
  }
 
- #img-div {
-    padding: 0 0 40px 0;
-    background-color: #fff;
+ 
+ #tribute-info ul{
+        list-style-type:none;
+        border-left:1px solid rgba(255, 255, 255, 0.6);
+        padding:10px 20px;
+    }
+ 
+    #tribute-info ul li{
+        padding:20px 20px;
+        position:relative;
+        border-radius: 5px;
+        cursor:pointer;
+        transition:.5s;
+    }
 
+    #tribute-info ul li h3{
+        display:inline-block;
+        background-color:#39A2AE;
+        color: white;
+        border-radius:25px;
+        padding:5px 10px;
+        margin-bottom: 5px;
+        font-size:18px;
+        text-align:center;
+    }
+
+    #tribute-info ul li p {
+        font-size: 16px;
+    }
+
+    #tribute-info ul li:before{
+        position:absolute;
+        content:'';
+        width:10px;
+        height:10px;
+        background-color:#39A2AE;
+        border-radius:50%;
+        left:-25px;
+        top:28px;
+        transition:1s ease-in-out;
+    }
+
+    #tribute-info ul li:hover{
+        background-color: rgba(255, 255, 255, 0.6);
+
+    }
+
+    #tribute-info ul li:hover::before{
+        background-color:#FFF;
+        box-shadow:0px 0px 10px 2px #fff; 
+    }
+
+ #img-div {
+    padding: 0 0 20px 0;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
  }
 
  #img-caption {
@@ -56,6 +120,13 @@ body {
  .footer {
     margin:0 auto;
     padding: 40px;
+    font-size: 10px;
+ }
+
+ .footer a {
+    text-decoration: none;
+    color: #39A2AE;
+    ;
  }
 
   img {
@@ -64,3 +135,9 @@ body {
   display: block;
   margin: 0 auto;
   }
+
+@media  (max-width: 600px) {
+    #subtitle {
+        font-size: 18px;
+    }
+}
