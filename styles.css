@@ -136,3 +136,8 @@ body {
   margin: 0 auto;
   }
 
+  @media (max-width: 600px) {
+    #subtitle {
+      font-size: 18px;
+    }
+  }
