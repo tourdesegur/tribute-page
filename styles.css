@@ -1,17 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *, body, html {
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
   }
+
+body {
+    background-color: #f5f2ec;
+  }
+
+ h1, h3, #subtitle {
+    font-family: 'Amatic SC', cursive;
+ } 
+
+ h1 {
+    font-size: 64px;
+    font-weight: 400;
+ }
+
+ #subtitle {
+    font-size: 24px;
+ }
  .header, #img-div, .footer {
     text-align: center;
  } 
 
- .header, #tribute-info {
-    background-color: aqua;
-    width: 60%;
+ .header {
     margin:0 auto;
     padding: 40px;
+    background-color: #f5f2ec;
+ }
+
+ #tribute-info {
+    background-color: #ABC4B9;
+    width: 60%;
+    margin:40px auto 0 auto;
+    padding: 40px;
+    border-radius: 5px;
+ }
+
+ #img-div {
+    padding: 0 0 40px 0;
+    background-color: #fff;
+
+ }
+
+ #img-caption {
+    width: 60%;
+    margin:20px auto 0 auto;
+    padding: 20px;
  }
 
  .footer {
@@ -20,8 +59,7 @@
  }
 
   img {
-  max-width:100%;
-  width:80%;
+  width:100%;
   height: auto;
   display: block;
   margin: 0 auto;
